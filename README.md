@@ -1,4 +1,4 @@
-# 🩺 To-Do Saúde – Versão Final do Projeto
+# 🩺 To-Do Saúde 
 
 Este é o repositório do projeto **To-Do Saúde**, um aplicativo web desenvolvido com Django que visa auxiliar os usuários a manterem um estilo de vida mais saudável através de acompanhamento personalizado, sugestões de refeições e exercícios, e uma lista de tarefas semanais.
 
