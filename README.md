@@ -1,26 +1,28 @@
-# 🩺 To-Do Farma
+# 🏥 MediControl: Sistema de Gestão Farmacêutica Inteligente
 
-Este é o repositório do projeto **To-Do Farma**, uma aplicação em Python voltada para o gerenciamento e priorização de medicamentos, utilizando classificação por níveis de urgência e organização por laboratório.
+## ✨ Visão Geral
+O MediControl é uma solução web moderna para gestão de medicamentos em farmácias, oferecendo controle inteligente de estoque com sistema de priorização por urgência. Desenvolvido para simplificar e otimizar o gerenciamento diário de insumos farmacêuticos.
 
-O sistema possibilita cadastrar, editar, excluir e gerar listas estruturadas de forma automática, oferecendo suporte eficiente ao planejamento de compras de medicamentos em farmácias, unidades de saúde ou no uso pessoal.
+## 🚀 Funcionalidades Principais
 
+### ✅ Implementadas
+- **Cadastro Inteligente** de medicamentos com dados completos
+- **Sistema de Urgência Tripla** (🟢 Verde / 🟡 Amarelo / 🔴 Vermelho)
+- **Dashboard em Tempo Real** com visualização por prioridade
+- **Gestão de Laboratórios** - agrupamento e edição em lote
+- **Interface Web Responsiva** - acessível em qualquer dispositivo
 
----
+## 💻 Tecnologias & Arquitetura
 
-## 📌 Funcionalidades
- 
-### ✅ Cadastro de Medicamentos
-É possível registrar:
-- **Nome**
-- **Apresentação**
-- **Laboratório**
-- **Quantidade**
-- **Urgência** (🟢 verde, 🟡 amarelo, 🔴 vermelho)
+| Camada | Tecnologia | Finalidade |
+|--------|------------|------------|
+| **Backend** | Python 3.x + HTTP Server | Lógica de negócio e API REST |
+| **Frontend** | HTML5 + CSS3 + JavaScript | Interface moderna e responsiva |
+| **Armazenamento** | JSON em memória | Persistência de dados temporária |
+| **Design** | CSS Puro + Flexbox/Grid | Experiência visual profissional |
 
-### 📊 Geração das Listas
-Ao gerar as listas, o sistema:
-- Classifica os medicamentos por nível de urgência  
-- Agrupa cada categoria por laboratório  
-- Exibe todos os itens com suas respectivas informações  
+## 🛠️ Como Executar
 
----
+### Pré-requisitos
+- Python 3.8 ou superior
+- Navegador web moderno
