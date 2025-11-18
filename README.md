@@ -1,6 +1,7 @@
 # 💊 MediControl
 
 Este projeto consiste em um sistema interativo em Python desenvolvido para auxiliar no controle de medicamentos, permitindo cadastrar, editar, excluir e gerar listas organizadas por nível de urgência e por laboratório.
+
 O objetivo é facilitar o gerenciamento de compras de medicamentos.
 
 ---
