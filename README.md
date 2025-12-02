@@ -73,12 +73,15 @@ python app.py
 O menu oferece as funções:
 
 ```
-1. Cadastrar medicamentos
-2. Gerar listas por urgência
-3. Editar laboratório
-4. Deletar laboratório
-5. Listar laboratórios cadastrados
-6. Sair
+1. Cadastrar medicamento
+2. Cadastrar laboratório
+3. Editar medicamento
+4. Excluir medicamento
+5. Editar laboratório
+6. Excluir laboratório
+7. Gerar listas
+8. Excluir todos os dados
+9. Sair
 ```
 
 As listas são exibidas já separadas por nível de urgência:
