@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="MEDICONTROL"/>
+        <attribute name="authors" value="Atoml"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-02 03:30:52 "/>
+        <attribute name="created" value="QXRvbWw7UEVJWE9UTzsyMDI1LTEyLTAyOyIwMjoxNTo1MyAiOzIyNDY="/>
+        <attribute name="edited" value="QXRvbWw7UEVJWE9UTzsyMDI1LTEyLTAyOyIwMzozMDo1MiAiOzI7MjM1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="EscolhaDeMenu, quantidade" type="Integer" array="False" size=""/>
+            <declare name="laboratorio, medicamento, apresentacao, urgencia" type="String" array="False" size=""/>
+            <assign variable="EscolhaDeMenu" expression="0"/>
+            <while expression="EscolhaDeMenu != 9">
+                <output expression="&quot;MENU&quot;" newline="True"/>
+                <output expression="&quot;1. CADASTRAR MEDICAMENTO&quot;" newline="True"/>
+                <output expression="&quot;2. CADASTRAR LABORAT&#211;RIO&quot;" newline="True"/>
+                <output expression="&quot;3. EDITAR MEDICAMENTO&quot;" newline="True"/>
+                <output expression="&quot;4. EXCLUIR MEDICAMENTO&quot;" newline="True"/>
+                <output expression="&quot;5. EDITAR LABORAT&#211;RIO&quot;" newline="True"/>
+                <output expression="&quot;6. EXCLUIR LABORAT&#211;RIO&quot;" newline="True"/>
+                <output expression="&quot;7. GERAR LISTA (PRIORIDADE/LABORAT&#211;RIO&quot;" newline="True"/>
+                <output expression="&quot;8. EXLUIR TODOS OS DADOS&quot;" newline="True"/>
+                <output expression="&quot;9. SAIR&quot;" newline="True"/>
+                <input variable="EscolhaDeMenu"/>
+                <if expression="EscolhaDeMenu == 1">
+                    <then>
+                        <output expression="&quot;nome do Medicamento:&quot;" newline="True"/>
+                        <input variable="medicamento"/>
+                        <output expression="&quot;Apresenta&#231;&#227;o:&quot;" newline="True"/>
+                        <input variable="apresentacao"/>
+                        <output expression="&quot;Nome do Laborat&#243;rio&quot;" newline="True"/>
+                        <input variable="laboratorio"/>
+                        <output expression="&quot;Quantidade:&quot;" newline="True"/>
+                        <input variable="quantidade"/>
+                        <output expression="&quot;grau de urg&#234;cia&quot;" newline="True"/>
+                        <input variable="urgencia"/>
+                    </then>
+                    <else>
+                        <if expression="EscolhaDeMenu == 2">
+                            <then>
+                                <output expression="&quot;Escreva o nome do laborat&#243;rio&quot;" newline="True"/>
+                                <input variable="laboratorio"/>
+                                <output expression="&quot;laboratorio cadastrado&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="EscolhaDeMenu == 3">
+                                    <then>
+                                        <output expression="&quot;Digite o novo nome do medicamento&quot;" newline="True"/>
+                                        <input variable="medicamento"/>
+                                        <output expression="&quot;Medicamento alterado&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="EscolhaDeMenu == 4">
+                                            <then>
+                                                <output expression="&quot;voc&#234; est&#225; exclindo o medicamento&quot;" newline="True"/>
+                                                <assign variable="medicamento" expression="&quot;&quot;"/>
+                                            </then>
+                                            <else>
+                                                <if expression="EscolhaDeMenu == 5">
+                                                    <then>
+                                                        <output expression="&quot;Edite o nome do laborat&#243;rio&quot;" newline="True"/>
+                                                        <input variable="laboratorio"/>
+                                                        <output expression="&quot;laborat&#243;rio alterado&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="EscolhaDeMenu == 6">
+                                                            <then>
+                                                                <output expression="&quot;voc&#234; est&#225; excluindo o laborat&#243;rio&quot;" newline="True"/>
+                                                                <assign variable="laboratorio" expression="&quot;&quot;"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="EscolhaDeMenu == 7">
+                                                                    <then>
+                                                                        <output expression="&quot;Medicamento: &quot; &amp;medicamento" newline="True"/>
+                                                                        <output expression="&quot;Apresenta&#231;&#227;o: &quot; &amp;apresentacao" newline="True"/>
+                                                                        <output expression="&quot;Laborat&#243;rio: &quot; &amp;laboratorio" newline="True"/>
+                                                                        <output expression="&quot;Quantidade: &quot; &amp;quantidade" newline="True"/>
+                                                                        <output expression="&quot;Grau de Urg&#234;ncia: &quot; &amp;urgencia" newline="True"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="EscolhaDeMenu == 8">
+                                                                            <then>
+                                                                                <output expression="&quot;voc&#234; est&#225; limpando todos os dados&quot;" newline="True"/>
+                                                                                <assign variable="quantidade" expression="0"/>
+                                                                                <assign variable="laboratorio" expression="&quot;&quot;"/>
+                                                                                <assign variable="medicamento" expression="&quot;&quot;"/>
+                                                                                <assign variable="urgencia" expression="&quot;&quot;"/>
+                                                                                <assign variable="apresentacao" expression="&quot;&quot;"/>
+                                                                            </then>
+                                                                            <else/>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Volte sempre&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
